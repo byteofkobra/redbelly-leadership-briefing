@@ -1,0 +1,87 @@
+# X thread: Redbelly’s incoming CEO
+
+8 posts summarising the [community briefing](../briefing/redbelly-leadership-briefing.md). Information current to 31 October 2026.
+
+- Copy each block as one post. The links are part of the post.
+- Character counts follow X’s rules: every link counts as 23 characters, whatever its length.
+- Every post links to the source that supports it. Post 8 is analysis and is labelled as such.
+- `scripts/verify.py` re-checks the counts and links.
+
+### Post 1 of 8 · 262/280
+
+```text
+Redbelly Network has named Christian Westerlind Wigstrom as its new CEO. He starts on Monday 2 November 2026. Here is a short, sourced briefing on his professional record and what it could mean for Tokeniser. (1/8)
+https://redbelly.network/blog/redbelly-new-CEO-is-a-payments-pioneer-betting-on-regulated-tokenisation
+https://www.bankingday.com/redbelly-announces-paytech-co-founder-christian-westerlind-wigstrom-as-ceo-to-push-into-tokenisation
+```
+
+<sub>Sources: [[1] Redbelly Network](https://redbelly.network/blog/redbelly-new-CEO-is-a-payments-pioneer-betting-on-regulated-tokenisation) · [[2] Banking Day](https://www.bankingday.com/redbelly-announces-paytech-co-founder-christian-westerlind-wigstrom-as-ceo-to-push-into-tokenisation)</sub>
+
+### Post 2 of 8 · 240/280
+
+```text
+Who is he? He co-founded Australian payments company Monoova, first known as Moneytech Payments, and led it for 9.5 years. In May 2026 Monoova announced he was stepping down as CEO; a new CEO started on 1 July. (2/8)
+https://www.monoova.com/newsroom/monoova-appoints-bianca-bates-as-ceo
+```
+
+<sub>Sources: [[3] Monoova](https://www.monoova.com/newsroom/monoova-appoints-bianca-bates-as-ceo)</sub>
+
+### Post 3 of 8 · 276/280
+
+```text
+Scale, as reported: Monoova processed over $1bn by October 2019 and close to $200bn by May 2026. Redbelly says Monoova became Australia’s largest PayTo processor. These are company-reported figures. (3/8)
+https://www.cuscal.com/newsroom/media-releases/monoova-becomes-the-latest-non-bank-to-connect-to-the-new-payments-platform-npp/
+https://www.monoova.com/newsroom/monoova-appoints-bianca-bates-as-ceo
+https://redbelly.network/blog/redbelly-new-CEO-is-a-payments-pioneer-betting-on-regulated-tokenisation
+```
+
+<sub>Sources: [[4] Cuscal](https://www.cuscal.com/newsroom/media-releases/monoova-becomes-the-latest-non-bank-to-connect-to-the-new-payments-platform-npp/) · [[3] Monoova](https://www.monoova.com/newsroom/monoova-appoints-bianca-bates-as-ceo) · [[1] Redbelly Network](https://redbelly.network/blog/redbelly-new-CEO-is-a-payments-pioneer-betting-on-regulated-tokenisation)</sub>
+
+### Post 4 of 8 · 257/280
+
+```text
+Before payments: a master’s in economics and a PhD from Oxford, work as an economic adviser and speechwriter in the House of Lords, and three years as Chief of Staff at an agricultural group in Zimbabwe. (4/8)
+https://tieronepeople.com/2023/05/26/christian-westerlind-wigstrom-co-founder-and-ceo-of-monoova/
+https://www.thebusinessconversation.com.au/contributor/christian-westerlind-wigstrom
+```
+
+<sub>Sources: [[9] Tier One People](https://tieronepeople.com/2023/05/26/christian-westerlind-wigstrom-co-founder-and-ceo-of-monoova/) · [[11] The Business Conversation](https://www.thebusinessconversation.com.au/contributor/christian-westerlind-wigstrom)</sub>
+
+### Post 5 of 8 · 271/280
+
+```text
+Industry roles: FinTech Australia board member from 2022 and Treasurer from 2023; Alternate Director of the Australian Payments Network, the payments industry’s self-regulatory body, from 2025. (5/8)
+https://www.fintechaustralia.org.au/community-news/fintech-australia-announces-new-board-appointment-confirms-board-roles
+https://www.fintechaustralia.org.au/community-news/fintech-australia-announces-new-board-appointments-2023
+https://www.monoova.com/newsroom/christian-wigstrom-australian-payments-network
+```
+
+<sub>Sources: [[19] FinTech Australia](https://www.fintechaustralia.org.au/community-news/fintech-australia-announces-new-board-appointment-confirms-board-roles) · [[5] FinTech Australia](https://www.fintechaustralia.org.au/community-news/fintech-australia-announces-new-board-appointments-2023) · [[6] Monoova](https://www.monoova.com/newsroom/christian-wigstrom-australian-payments-network)</sub>
+
+### Post 6 of 8 · 247/280
+
+```text
+Redbelly says he joins “to lead the company’s push into regulated tokenisation”. In his words: “In payments, I learnt that success belonged to the company that saw compliance as a product edge rather than a tick box.” (6/8)
+https://redbelly.network/blog/redbelly-new-CEO-is-a-payments-pioneer-betting-on-regulated-tokenisation
+```
+
+<sub>Sources: [[1] Redbelly Network](https://redbelly.network/blog/redbelly-new-CEO-is-a-payments-pioneer-betting-on-regulated-tokenisation)</sub>
+
+### Post 7 of 8 · 265/280
+
+```text
+Context: ASIC says Australia’s new laws for digital asset and tokenised custody platforms commence on 8 April 2027. Tokeniser, a Redbelly Network project, serves funds, share registries and asset administrators. (7/8)
+https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-245mr-asic-consults-on-implementation-of-new-digital-asset-laws
+https://tokeniser.com/
+```
+
+<sub>Sources: [[23] ASIC](https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-245mr-asic-consults-on-implementation-of-new-digital-asset-laws) · [[28] Tokeniser](https://tokeniser.com/)</sub>
+
+### Post 8 of 8 · 275/280
+
+```text
+Analysis, not fact: his record centres on infrastructure that runs in the background, sold through partners, with compliance as a feature. That may shape how Tokeniser is pitched to institutions. The announcement does not set out his priorities. (8/8)
+https://redbelly.network/blog/redbelly-new-CEO-is-a-payments-pioneer-betting-on-regulated-tokenisation
+```
+
+<sub>Sources: [[1] Redbelly Network](https://redbelly.network/blog/redbelly-new-CEO-is-a-payments-pioneer-betting-on-regulated-tokenisation)</sub>
