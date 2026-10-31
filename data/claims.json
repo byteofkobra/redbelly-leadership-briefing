@@ -1,0 +1,219 @@
+{
+  "about": "Every factual claim in the briefing, the source(s) that support it, and a short verbatim excerpt from each source. scripts/check_sources.py fetches each live page and confirms the excerpt is still there.",
+  "claims": [
+    { "section": "At a glance", "claim": "CEO of Redbelly Network, starting Monday 2 November 2026.", "support": [
+      { "source": "redbelly", "excerpt": "announced the appointment of Christian Westerlind Wigstrom as Chief Executive Officer to start November 2026" },
+      { "source": "bankingday", "excerpt": "to start on Monday, 2 November 2026" } ] },
+    { "section": "At a glance", "claim": "Co-founded Monoova and led it for 9.5 years; in May 2026 Monoova announced he was stepping down as CEO.", "support": [
+      { "source": "monoova-ceo", "excerpt": "Monoova's Cofounder Christian Westerlind Wigstrom is stepping down as CEO" },
+      { "source": "monoova-ceo", "excerpt": "Over the past 9.5 years, Christian has led the growth" },
+      { "source": "monoova-ceo", "excerpt": "May 18, 2026" } ] },
+    { "section": "At a glance", "claim": "Monoova reported over $1 billion processed by October 2019 and close to $200 billion by May 2026.", "support": [
+      { "source": "cuscal", "excerpt": "Since inception, Monoova has processed over 1 billion dollars" },
+      { "source": "cuscal", "excerpt": "Sydney, 2 October 2019" },
+      { "source": "monoova-ceo", "excerpt": "Having processed close to $200bn in payments since Christian joined" } ] },
+    { "section": "At a glance", "claim": "FinTech Australia board member and Treasurer; Alternate Director of the Australian Payments Network.", "support": [
+      { "source": "fta-2023", "excerpt": "co-founder and CEO of Monoova, appointed Treasurer" },
+      { "source": "auspaynet", "excerpt": "has been appointed as Alternate Director to the Australian Payments Network (AusPayNet)" } ] },
+    { "section": "At a glance", "claim": "Redbelly says he “joins to lead the company’s push into regulated tokenisation”.", "support": [
+      { "source": "redbelly", "excerpt": "Christian joins to lead the company's push into regulated tokenisation" } ] },
+
+    { "section": "1. The appointment", "claim": "On 16 September 2026 Redbelly announced him as CEO, starting in November 2026.", "support": [
+      { "source": "redbelly", "excerpt": "SYDNEY, Australia — 16 September 2026" },
+      { "source": "redbelly", "excerpt": "Today, Redbelly Network announced the appointment of Christian Westerlind Wigstrom as Chief Executive Officer to start November 2026" } ] },
+    { "section": "1. The appointment", "claim": "The announcement was also issued as a press release through Medianet.", "support": [
+      { "source": "medianet", "excerpt": "Christian joins to lead the company's push into regulated tokenisation" } ] },
+    { "section": "1. The appointment", "claim": "SMB Tech covered the appointment.", "support": [
+      { "source": "smbtech", "excerpt": null, "manual": "The site blocks automated checkers. Open the link in a browser: the headline reports the appointment." } ] },
+    { "section": "1. The appointment", "claim": "Banking Day, a banking and finance news service, reported his start date as Monday, 2 November 2026.", "support": [
+      { "source": "bankingday", "excerpt": "Focused on banking and finance" },
+      { "source": "bankingday", "excerpt": "to start on Monday, 2 November 2026" } ] },
+
+    { "section": "2. Background: before payments", "claim": "He holds a master’s degree in economics and a PhD in international relations from the University of Oxford.", "support": [
+      { "source": "tierone", "excerpt": "obtained a Master's Degree in Economics, and a PhD in International Relations from Oxford University" } ] },
+    { "section": "2. Background: before payments", "claim": "As a doctoral student he worked with Robert Skidelsky on economic policy and theory.", "support": [
+      { "source": "inet", "excerpt": "A third-year doctoral student at the University of Oxford" },
+      { "source": "inet", "excerpt": "has been working with Robert Skidelsky at the intersection of economic policy and theory" } ] },
+    { "section": "2. Background: before payments", "claim": "He was an economic adviser and speechwriter in the House of Lords.", "support": [
+      { "source": "tierone", "excerpt": "a position as speech writer and economic advisor in the House of Lords" },
+      { "source": "bizconv", "excerpt": "he worked as an economic advisor and speech writer in the UK Parliament" } ] },
+    { "section": "2. Background: before payments", "claim": "In 2010 he and Robert Skidelsky co-edited The Economic Crisis and the State of Economics (Palgrave Macmillan).", "support": [
+      { "source": "econpapers", "excerpt": "Edited by Robert Skidelsky and Christian Westerlind Wigström" },
+      { "source": "econpapers", "excerpt": "Date: 2010" },
+      { "source": "econpapers", "excerpt": "Palgrave Macmillan Books" } ] },
+    { "section": "2. Background: before payments", "claim": "From September 2010 he was executive secretary of the UK branch of an INET economics-curriculum task force.", "support": [
+      { "source": "inet", "excerpt": "Since September 2010, Christian is the executive secretary of the UK branch of INET's economics-curriculum task force" } ] },
+    { "section": "2. Background: before payments", "claim": "He spent three years as Chief of Staff at a Harare-based agricultural group in Zimbabwe.", "support": [
+      { "source": "tierone", "excerpt": "moved to Zimbabwe to work as Chief of Staff at a Harare-based agricultural group" },
+      { "source": "bizconv", "excerpt": "spending three years as Chief of Staff and Markets at a large agricultural startup in Zimbabwe" } ] },
+    { "section": "2. Background: before payments", "claim": "He arrived in Australia in late 2016.", "support": [
+      { "source": "bizconv", "excerpt": "He arrived in Australia in late 2016" } ] },
+
+    { "section": "2. Background: Monoova", "claim": "Monoova was founded in 2017 as Moneytech Payments.", "support": [
+      { "source": "cuscal", "excerpt": "Monoova (formerly known as Moneytech Payments) was founded in 2017" } ] },
+    { "section": "2. Background: Monoova", "claim": "It rebranded as Monoova in 2019.", "support": [
+      { "source": "about", "excerpt": "In 2019, we rebranded as Monoova" } ] },
+    { "section": "2. Background: Monoova", "claim": "It is a business-to-business payments company that others connect to through one API to receive, manage and pay funds.", "support": [
+      { "source": "about", "excerpt": "receive, manage and pay funds seamlessly, all through one simple API integration" },
+      { "source": "tierone", "excerpt": "B2B payments automation platform" } ] },
+    { "section": "2. Background: Monoova", "claim": "Monoova describes him as a co-founder.", "support": [
+      { "source": "monoova-ceo", "excerpt": "Monoova's Cofounder Christian Westerlind Wigstrom" } ] },
+    { "section": "2. Background: Monoova", "claim": "Monoova is the authorised representative of Monoova Global Payments, which holds AFS Licence 421414.", "support": [
+      { "source": "about", "excerpt": "is the authorised representative of Monoova Global Payments Pty Ltd (ACN 106 249 852 | AFSL 421414)" } ] },
+    { "section": "2. Background: Monoova", "claim": "Both companies are enrolled as reporting entities with AUSTRAC.", "support": [
+      { "source": "about", "excerpt": "Monoova and Monoova Global are enrolled as reporting entities with AUSTRAC" } ] },
+    { "section": "2. Background: Monoova", "claim": "An AFS licence is generally needed to run a financial services business in Australia.", "support": [
+      { "source": "asic-afs", "excerpt": "If you want to run a financial services business, you generally need to be authorised under an AFS licence" } ] },
+    { "section": "2. Background: Monoova", "claim": "AUSTRAC is Australia’s anti-money-laundering regulator and financial intelligence unit.", "support": [
+      { "source": "homeaffairs", "excerpt": "AUSTRAC is Australia's AML/CTF regulator and financial intelligence unit" } ] },
+    { "section": "2. Milestones table", "claim": "2019: connects to the NPP, adding real-time payments, as one of a very small group of non-bank institutions; he is quoted as Head of Monoova; over $1 billion processed since 2017.", "support": [
+      { "source": "cuscal", "excerpt": "As the latest member of the very small group of non-bank Identified Institution to be enabled on the NPP" },
+      { "source": "cuscal", "excerpt": "add real-time account payables and receivables functionality" },
+      { "source": "cuscal", "excerpt": "Head of Monoova, Christian Westerlind Wigstrom" },
+      { "source": "cuscal", "excerpt": "Since inception, Monoova has processed over 1 billion dollars" } ] },
+    { "section": "2. Milestones table", "claim": "2022: merges with Moneytech FX to add cross-border payments; team of around 70; about $50 billion since launch; Fintech Organisation of the Year.", "support": [
+      { "source": "startupdaily", "excerpt": "Monoova has merged with foreign exchange fintech Moneytech FX to build out its cross-border payments offering" },
+      { "source": "startupdaily", "excerpt": "with a team of around 70" },
+      { "source": "startupdaily", "excerpt": "Monoova has moved about $50 billion through its platform since launching five years ago" },
+      { "source": "about", "excerpt": "Fintech Organisation of the Year in 2022" } ] },
+    { "section": "2. Milestones table", "claim": "2023: first mover on PayTo, a way to authorise payments from a bank account; $75 billion processed to date (May 2023).", "support": [
+      { "source": "tierone", "excerpt": "As the first mover in the market on the new domestic PayTo transaction type earlier this year" },
+      { "source": "tierone", "excerpt": "To date, Monoova has processed $75bn" },
+      { "source": "payto", "excerpt": "is a secure payment method that lets you pay from your bank account" } ] },
+    { "section": "2. Milestones table", "claim": "2024: handles “a comfortable majority of all PayTo activity” by mid-2024.", "support": [
+      { "source": "about", "excerpt": "As of mid-2024, we facilitate a comfortable majority of all PayTo activity" } ] },
+    { "section": "2. Milestones table", "claim": "2025: Company of the Year at the Global FinTech Awards in London.", "support": [
+      { "source": "about", "excerpt": "Company of the Year at the 2025 Global FinTech Awards in London" } ] },
+    { "section": "2. Milestones table", "claim": "2026: steps down as CEO after 9.5 years (announced 18 May); a new CEO starts on 1 July; close to $200 billion since he joined.", "support": [
+      { "source": "monoova-ceo", "excerpt": "is stepping down as CEO. Over the past 9.5 years" },
+      { "source": "monoova-ceo", "excerpt": "Bianca Bates will commence as Monoova CEO on the 1st of July" },
+      { "source": "monoova-ceo", "excerpt": "Having processed close to $200bn in payments since Christian joined" } ] },
+    { "section": "2. Clients and reach", "claim": "Clients have included Wise and Nium, Hnry and the listed business Carsales.", "support": [
+      { "source": "tierone", "excerpt": "such as Wise, Nium and a significant portion of the Australian digital-currency industry" },
+      { "source": "startupdaily", "excerpt": "serving fintechs such as Jacaranda, Hnry and Wise" },
+      { "source": "monoova-ceo", "excerpt": "to listed businesses such as Carsales" } ] },
+    { "section": "2. Clients and reach", "claim": "A 2023 profile says it also served “a significant portion of the Australian digital-currency industry”.", "support": [
+      { "source": "tierone", "excerpt": "a significant portion of the Australian digital-currency industry" } ] },
+    { "section": "2. Clients and reach", "claim": "By May 2026 it transacted with more than 10% of all Australians.", "support": [
+      { "source": "monoova-ceo", "excerpt": "Monoova currently transacts with more than 10% of all Australians" } ] },
+    { "section": "2. Clients and reach", "claim": "Redbelly says Monoova became Australia’s largest PayTo processor and issued almost a quarter of the country’s PayIDs.", "support": [
+      { "source": "redbelly", "excerpt": "Monoova became Australia's largest PayTo processor, issued almost a quarter of the country's PayIDs" } ] },
+    { "section": "2. Clients and reach", "claim": "PayTo lets people authorise and manage payment agreements in their online banking.", "support": [
+      { "source": "payto", "excerpt": "PayTo agreements are authorised and managed in your online banking" } ] },
+    { "section": "2. Clients and reach", "claim": "A PayID is an easy-to-remember detail, such as a mobile number or email address, linked to a bank account.", "support": [
+      { "source": "payid", "excerpt": "is an easy-to-remember piece of information, such as a mobile number, email address, ABN, or Organisation Identifier, that's linked to a bank account" } ] },
+    { "section": "2. In his own words", "claim": "Per 2023 podcast notes, in a 2018 talk titled “The Death of Payments 2030” he “argued that while payments would not die, paying would”.", "support": [
+      { "source": "tierone", "excerpt": "May 26, 2023" },
+      { "source": "tierone", "excerpt": "first connected in 2018 when Christian did a presentation on the future of Payments title The Death of Payments 2030" },
+      { "source": "tierone", "excerpt": "argued that while payments would not die, paying would" } ] },
+    { "section": "2. In his own words", "claim": "In 2019 he said fully automating how funds are received and managed lets businesses spend more time servicing customers.", "support": [
+      { "source": "cuscal", "excerpt": "by fully automating how funds are received and managed, business can focus more time on what they are there to do: servicing their customers" } ] },
+    { "section": "2. Industry roles table", "claim": "FinTech Australia: elected to the board, December 2022.", "support": [
+      { "source": "fta-2022", "excerpt": "has been elected to FinTech Australia's board" },
+      { "source": "fta-2022", "excerpt": "December 1, 2022" } ] },
+    { "section": "2. Industry roles table", "claim": "FinTech Australia: appointed Treasurer, November 2023.", "support": [
+      { "source": "fta-2023", "excerpt": "co-founder and CEO of Monoova, appointed Treasurer" } ] },
+    { "section": "2. Industry roles table", "claim": "FinTech Australia: re-elected as a director and reappointed Treasurer for a second term, November to December 2024.", "support": [
+      { "source": "monoova-fta", "excerpt": "re-elected as a Director at Fintech Australia" },
+      { "source": "monoova-fta", "excerpt": "November 28, 2024" },
+      { "source": "fta-2024", "excerpt": "Treasurer of FinTech Australia who has been reappointed for a second term" } ] },
+    { "section": "2. Industry roles table", "claim": "AusPayNet: Alternate Director, elected by non-bank payment service providers to represent them, March 2025.", "support": [
+      { "source": "auspaynet", "excerpt": "Christian was elected by the non-bank payment-services providers (PSPs) members to represent their interests on the AusPayNet board" },
+      { "source": "auspaynet", "excerpt": "March 17, 2025" } ] },
+    { "section": "2. Industry roles", "claim": "FinTech Australia is the peak body for the Australian fintech sector.", "support": [
+      { "source": "monoova-fta", "excerpt": "the peak body for the Australian fintech sector" } ] },
+    { "section": "2. Industry roles", "claim": "AusPayNet is the payments industry’s self-regulatory body and works with government regulators on policy development.", "support": [
+      { "source": "auspaynet", "excerpt": "the self-regulatory body for Australia's payments industry" },
+      { "source": "auspaynet", "excerpt": "works with industry stakeholders, government regulators and the wider community to provide thought leadership and policy development" } ] },
+    { "section": "2. Industry roles", "claim": "In September 2026 Banking Day described him as sitting on the FinTech Australia board and serving as an AusPayNet alternate director.", "support": [
+      { "source": "bankingday", "excerpt": "also sits on the board of FinTech Australia and serves as an alternate director at AusPayNet" } ] },
+    { "section": "2. Industry roles", "claim": "Finalist for FinTech Australia’s Outstanding Fintech Leader of the Year in 2020, 2021 and 2022.", "support": [
+      { "source": "tierone", "excerpt": "finalist for the 'Outstanding Fintech Leader of the Year' by Fintech Australia in 2020, 2021 & 2022" } ] },
+
+    { "section": "3. What Redbelly said", "claim": "Redbelly: “payments infrastructure must be good enough to disappear into the background”.", "support": [
+      { "source": "redbelly", "excerpt": "payments infrastructure must be good enough to disappear into the background" } ] },
+    { "section": "3. What Redbelly said", "claim": "Redbelly: capital-markets infrastructure “must be secure, scalable and fast enough to support enterprise-level use cases behind the scenes”.", "support": [
+      { "source": "redbelly", "excerpt": "applying that same thesis to regulated capital-markets infrastructure: it must be secure, scalable and fast enough to support enterprise-level use cases behind the scenes" } ] },
+    { "section": "3. What Redbelly said", "claim": "Redbelly says tokenisation in Australia has moved beyond pilots.", "support": [
+      { "source": "redbelly", "excerpt": "For years, tokenisation in Australia lived in pilots. That has changed." } ] },
+    { "section": "3. What Redbelly said", "claim": "The Act is listed as Act No. 38 of 2026, dated 8 April 2026.", "support": [
+      { "source": "legislation", "excerpt": "Corporations Amendment (Digital Assets Framework) Act 2026" },
+      { "source": "legislation", "excerpt": "No. 38, 2026" },
+      { "source": "legislation", "excerpt": "08 April 2026" } ] },
+    { "section": "3. What Redbelly said", "claim": "It creates a regulatory framework for digital asset platforms (holding tokens for clients) and tokenised custody platforms (recording clients’ assets as tokens).", "support": [
+      { "source": "asic", "excerpt": "introduces a new regulatory framework for" },
+      { "source": "asic", "excerpt": "which involve the holding of digital tokens on behalf of clients" },
+      { "source": "asic", "excerpt": "which are arrangements that record underlying assets held for clients as digital tokens" } ] },
+    { "section": "3. What Redbelly said", "claim": "ASIC says the laws commence on 8 April 2027 and is consulting until 27 November 2026.", "support": [
+      { "source": "asic", "excerpt": "new laws for digital asset platforms and tokenised custody platforms commencing on 8 April 2027" },
+      { "source": "asic", "excerpt": "ASIC's consultation is open until 5pm AEDT 27 November 2026" } ] },
+    { "section": "3. What Redbelly said", "claim": "RBA and DFCRC released Project Acacia findings on 18 May 2026; 20 wholesale use cases tested; settlement options included a pilot wholesale CBDC.", "support": [
+      { "source": "rba-acacia", "excerpt": "18 May 2026" },
+      { "source": "rba-acacia", "excerpt": "The Reserve Bank of Australia (RBA) and the Digital Finance Cooperative Research Centre (DFCRC) today released" },
+      { "source": "rba-acacia", "excerpt": "industry participants developed and tested 20 wholesale tokenised asset market use cases" },
+      { "source": "rba-acacia", "excerpt": "a pilot wholesale central bank digital currency (wCBDC)" } ] },
+    { "section": "3. What Redbelly said", "claim": "“Wholesale” here means for financial institutions and other large institutions.", "support": [
+      { "source": "rba-money", "excerpt": "wholesale market participants such as financial institutions and other large institutions" } ] },
+    { "section": "3. What Redbelly said", "claim": "Redbelly says it was “the only public Layer 1 carrying real central bank claims on public infrastructure”.", "support": [
+      { "source": "redbelly", "excerpt": "the only public Layer 1 carrying real central bank claims on public infrastructure" } ] },
+    { "section": "3. What Redbelly said", "claim": "A Layer 1 is the main blockchain in a multi-level blockchain network.", "support": [
+      { "source": "glossary", "excerpt": "Layer 1 refers to the main blockchain in a multi-level blockchain network" } ] },
+    { "section": "3. What Redbelly said", "claim": "Redbelly says he “is not a crypto tourist” and has “spent years inside the regulated financial system, learning how new rails get adopted”.", "support": [
+      { "source": "redbelly", "excerpt": "Christian is not a crypto tourist" },
+      { "source": "redbelly", "excerpt": "He has spent years inside the regulated financial system, learning how new rails get adopted" } ] },
+    { "section": "3. What Redbelly said", "claim": "Quote: “One of Redbelly’s many strengths … starts being existential.”", "support": [
+      { "source": "redbelly", "excerpt": "One of Redbelly's many strengths is its regulatory credibility. In payments, I learnt that success belonged to the company that saw compliance as a product edge rather than a tick box. The same thing applies to capital-markets infrastructure. As new regulation takes effect, this insight stops being philosophical and starts being existential." } ] },
+    { "section": "3. What Redbelly said", "claim": "Quote: “The next era of finance won’t be won by the loudest chain … It’ll be won by the chain that institutions can actually use.”", "support": [
+      { "source": "redbelly", "excerpt": "The next era of finance won't be won by the loudest chain" },
+      { "source": "redbelly", "excerpt": "It'll be won by the chain that institutions can actually use." } ] },
+
+    { "section": "4. Redbelly and Tokeniser", "claim": "Redbelly describes itself as “a Layer 1 blockchain built for regulated finance, with native identity and compliance”.", "support": [
+      { "source": "redbelly", "excerpt": "Redbelly Network is a Layer 1 blockchain built for regulated finance, with native identity and compliance" } ] },
+    { "section": "4. Redbelly and Tokeniser", "claim": "Consensus is the way a network’s computers agree that they hold the same set of records.", "support": [
+      { "source": "glossary", "excerpt": "agree that they have the same set of records" } ] },
+    { "section": "4. Redbelly and Tokeniser", "claim": "Redbelly’s consensus method is patented and grew out of research at the University of Sydney and CSIRO, Australia’s government science agency.", "support": [
+      { "source": "tok-tech", "excerpt": "The consensus method itself is patented and built from scratch, developed from research at the University of Sydney and CSIRO, Australia's government science agency" } ] },
+    { "section": "4. Redbelly and Tokeniser", "claim": "Banking Day: the research was led by Professor Vincent Gramoli, Redbelly’s founder and CTO.", "support": [
+      { "source": "bankingday", "excerpt": "patented research led by Professor Vincent Gramoli at the University of Sydney and CSIRO. Gramoli is Redbelly Network's founder and CTO" } ] },
+    { "section": "4. Redbelly and Tokeniser", "claim": "Figures published by Redbelly Network: mainnet launched October 2024; more than 400 validators.", "support": [
+      { "source": "tok-tech", "excerpt": "Redbelly has run since mainnet launch in October 2024 with 100% uptime, across more than 400 validators" },
+      { "source": "tok-tech", "excerpt": "Figures published by Redbelly Network" } ] },
+    { "section": "4. Redbelly and Tokeniser", "claim": "Validators are the computers that process transactions and add new blocks.", "support": [
+      { "source": "glossary", "excerpt": "responsible for storing data, processing transactions, and adding new blocks to the blockchain" } ] },
+    { "section": "4. Redbelly and Tokeniser", "claim": "Tokeniser describes itself as “a Redbelly Network project”, provided by Australian company Tokeniser Pty Ltd.", "support": [
+      { "source": "tokeniser", "excerpt": "Tokeniser is a Redbelly Network project" },
+      { "source": "tokeniser", "excerpt": "Tokeniser Pty. Ltd. is an Australian company providing compliant asset tokenisation and management solutions" } ] },
+    { "section": "4. Redbelly and Tokeniser", "claim": "Redbelly’s tokenisation strategy is delivered through Tokeniser, which “brings fund and equity administration on-chain for regulated markets”.", "support": [
+      { "source": "redbelly", "excerpt": "Its tokenisation strategy, delivered through Tokeniser, brings fund and equity administration on-chain for regulated markets" } ] },
+    { "section": "4. Redbelly and Tokeniser", "claim": "Tokeniser serves funds, corporate share registries and asset administrators; one platform handles issuance to settlement.", "support": [
+      { "source": "tokeniser", "excerpt": "For Funds" },
+      { "source": "tokeniser", "excerpt": "For Corporate Registry" },
+      { "source": "tokeniser", "excerpt": "For Asset Administrators" },
+      { "source": "tokeniser", "excerpt": "one platform handles everything from issuance to settlement" } ] },
+    { "section": "4. Redbelly and Tokeniser", "claim": "Banking Day lists equities, notes and bonds, private credit, derivatives and commodities among the asset types.", "support": [
+      { "source": "bankingday", "excerpt": "such as equities, notes and bonds, private credit, derivatives and commodities" } ] },
+    { "section": "4. Redbelly and Tokeniser", "claim": "Identity, KYC, AML/CTF and wholesale and sophisticated-investor tests are programmed into each asset, with “every transfer checked against the asset’s rules”.", "support": [
+      { "source": "tokeniser", "excerpt": "identity, KYC, AML, CTF, wholesale and sophisticated investor tests" },
+      { "source": "tokeniser", "excerpt": "every transfer checked against the asset's rules" } ] },
+    { "section": "4. Redbelly and Tokeniser", "claim": "Products issued through Tokeniser operate under the issuer’s existing licensing.", "support": [
+      { "source": "tokeniser", "excerpt": "Products issued through Tokeniser operate under an Asset Issuer's existing licensing" } ] },
+    { "section": "4. Redbelly and Tokeniser", "claim": "Tokeniser works with IQ-EQ for customers needing a globally licensed institutional operator; its leadership team is chaired by Alan Burt.", "support": [
+      { "source": "tok-about", "excerpt": "For customers who require a globally licensed institutional operator, Tokeniser works closely with IQ-EQ" },
+      { "source": "tok-about", "excerpt": "Alan Burt Chairman" } ] },
+
+    { "section": "5. Analysis (facts it relies on)", "claim": "Monoova acted “behind the scenes” of other brands.", "support": [
+      { "source": "redbelly", "excerpt": "by acting \"behind the scenes\" of several leading, innovative brands" } ] },
+    { "section": "5. Analysis (facts it relies on)", "claim": "Tokeniser offers “a familiar experience”, with Redbelly running underneath.", "support": [
+      { "source": "tokeniser", "excerpt": "Tokeniser gives you a familiar experience" },
+      { "source": "tok-tech", "excerpt": "Underneath it runs Redbelly Network" } ] },
+    { "section": "5. Analysis (facts it relies on)", "claim": "His FinTech Australia and AusPayNet roles involved working alongside policymakers and regulators.", "support": [
+      { "source": "monoova-fta", "excerpt": "collaboration with fellow leaders, innovators, and policymakers" },
+      { "source": "auspaynet", "excerpt": "works with industry stakeholders, government regulators" } ] },
+    { "section": "5. Analysis (facts it relies on)", "claim": "The RBA is exploring a regulatory “sandbox” to give industry “a more structured pathway from experimentation to commercialisation”.", "support": [
+      { "source": "rba-acacia", "excerpt": "Exploration of a new regulatory 'sandbox' for digital financial market infrastructure to provide industry with a more structured pathway from experimentation to commercialisation" } ] },
+    { "section": "5. Analysis (facts it relies on)", "claim": "The RBA’s next program will focus on “overcoming long standing co-ordination challenges”.", "support": [
+      { "source": "rba-acacia", "excerpt": "The program will focus on overcoming long standing co-ordination challenges" } ] },
+    { "section": "6. Open questions (facts they rely on)", "claim": "Tokeniser’s position is that public digital token infrastructure sits outside custody licensing.", "support": [
+      { "source": "tok-tech", "excerpt": "recognises open, permissionless protocols as public digital token infrastructure, sitting outside markets, clearing and settlement, and custody licensing" } ] }
+  ]
+}

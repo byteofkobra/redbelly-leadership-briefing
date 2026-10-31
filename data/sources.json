@@ -1,0 +1,276 @@
+{
+  "checked_on": "31 October 2026",
+  "sources": [
+    {
+      "id": "redbelly",
+      "publisher": "Redbelly Network",
+      "title": "Redbelly's new CEO is a payments pioneer betting on regulated tokenisation",
+      "date": "16 September 2026",
+      "kind": "Primary: announcement",
+      "url": "https://redbelly.network/blog/redbelly-new-CEO-is-a-payments-pioneer-betting-on-regulated-tokenisation",
+      "access": "open"
+    },
+    {
+      "id": "bankingday",
+      "publisher": "Banking Day",
+      "title": "Redbelly announces paytech co-founder Christian Westerlind Wigstrom as CEO to push into tokenisation",
+      "date": "17 September 2026",
+      "kind": "News coverage",
+      "url": "https://www.bankingday.com/redbelly-announces-paytech-co-founder-christian-westerlind-wigstrom-as-ceo-to-push-into-tokenisation",
+      "access": "preview",
+      "note": "Partly paywalled. Only the free preview is relied on."
+    },
+    {
+      "id": "monoova-ceo",
+      "publisher": "Monoova",
+      "title": "Monoova appoints Bianca Bates as CEO, as Christian Westerlind Wigstrom steps down",
+      "date": "18 May 2026",
+      "kind": "Primary: company release",
+      "url": "https://www.monoova.com/newsroom/monoova-appoints-bianca-bates-as-ceo",
+      "access": "open"
+    },
+    {
+      "id": "cuscal",
+      "publisher": "Cuscal",
+      "title": "Monoova becomes the latest non-bank to connect to the NPP",
+      "date": "2 October 2019",
+      "kind": "Primary: company release",
+      "url": "https://www.cuscal.com/newsroom/media-releases/monoova-becomes-the-latest-non-bank-to-connect-to-the-new-payments-platform-npp/",
+      "access": "open"
+    },
+    {
+      "id": "fta-2023",
+      "publisher": "FinTech Australia",
+      "title": "FinTech Australia announces new board appointments",
+      "date": "24 November 2023",
+      "kind": "Primary: industry body",
+      "url": "https://www.fintechaustralia.org.au/community-news/fintech-australia-announces-new-board-appointments-2023",
+      "access": "open"
+    },
+    {
+      "id": "auspaynet",
+      "publisher": "Monoova",
+      "title": "Christian Westerlind Wigstrom appointed as Alternate Director at Australian Payments Network",
+      "date": "17 March 2025",
+      "kind": "Primary: company release",
+      "url": "https://www.monoova.com/newsroom/christian-wigstrom-australian-payments-network",
+      "access": "open"
+    },
+    {
+      "id": "medianet",
+      "publisher": "Medianet News Hub",
+      "title": "Redbelly's new CEO is a payments pioneer betting on regulated tokenisation (press release)",
+      "date": "16 September 2026",
+      "kind": "Primary: press release",
+      "url": "https://newshub.medianet.com.au/2026/09/redbellys-new-ceo-is-a-payments-pioneer-betting-on-regulated-tokenisation/171783/",
+      "access": "open"
+    },
+    {
+      "id": "smbtech",
+      "publisher": "SMB Tech",
+      "title": "Redbelly Network taps Monoova co-founder as chief executive to lead regulated tokenisation push",
+      "date": "September 2026",
+      "kind": "News coverage",
+      "url": "https://smbtech.au/news/redbelly-network-taps-monoova-co-founder-as-chief-executive-to-lead-regulated-tokenisation-push/",
+      "access": "manual",
+      "note": "Cited only to show that the appointment was covered. The site sometimes blocks automated checkers; if a check fails, open it in a browser."
+    },
+    {
+      "id": "tierone",
+      "publisher": "Tier One People",
+      "title": "Christian Westerlind Wigstrom – Monoova, Fintech Chatter Ep 146 (episode notes)",
+      "date": "26 May 2023",
+      "kind": "Profile and interview notes",
+      "url": "https://tieronepeople.com/2023/05/26/christian-westerlind-wigstrom-co-founder-and-ceo-of-monoova/",
+      "access": "open"
+    },
+    {
+      "id": "inet",
+      "publisher": "Institute for New Economic Thinking",
+      "title": "Christian Westerlind Wigstrom (expert profile)",
+      "date": "accessed 31 October 2026",
+      "kind": "Profile",
+      "url": "https://www.ineteconomics.org/research/experts/cwwigstrom",
+      "access": "open"
+    },
+    {
+      "id": "bizconv",
+      "publisher": "The Business Conversation",
+      "title": "Christian Westerlind Wigstrom (contributor profile)",
+      "date": "accessed 31 October 2026",
+      "kind": "Profile",
+      "url": "https://www.thebusinessconversation.com.au/contributor/christian-westerlind-wigstrom",
+      "access": "open"
+    },
+    {
+      "id": "econpapers",
+      "publisher": "EconPapers (RePEc)",
+      "title": "The Economic Crisis and the State of Economics, edited by Robert Skidelsky and Christian Westerlind Wigström (Palgrave Macmillan)",
+      "date": "2010",
+      "kind": "Bibliographic record",
+      "url": "https://econpapers.repec.org/bookchap/palpalbok/978-0-230-10569-0.htm",
+      "access": "open"
+    },
+    {
+      "id": "about",
+      "publisher": "Monoova",
+      "title": "About Monoova (including the regulatory notice in the site footer)",
+      "date": "accessed 31 October 2026",
+      "kind": "Primary: company website",
+      "url": "https://www.monoova.com/about",
+      "access": "open"
+    },
+    {
+      "id": "asic-afs",
+      "publisher": "ASIC",
+      "title": "Do you need an AFS licence?",
+      "date": "accessed 31 October 2026",
+      "kind": "Regulator: definition",
+      "url": "https://www.asic.gov.au/for-finance-professionals/afs-licensees/do-you-need-an-afs-licence/",
+      "access": "open"
+    },
+    {
+      "id": "homeaffairs",
+      "publisher": "Department of Home Affairs",
+      "title": "Anti-money laundering and counter-terrorism financing",
+      "date": "accessed 31 October 2026",
+      "kind": "Government: definition",
+      "url": "https://www.homeaffairs.gov.au/about-us/our-portfolios/criminal-justice/anti-money-laundering-and-counter-terrorism-financing",
+      "access": "open"
+    },
+    {
+      "id": "startupdaily",
+      "publisher": "Startup Daily",
+      "title": "Fintechs Monoova and Moneytech FX have merged",
+      "date": "12 July 2022",
+      "kind": "News coverage",
+      "url": "https://www.startupdaily.net/topic/fintech/fintechs-monoova-and-moneytech-fx-had-merged/",
+      "access": "open"
+    },
+    {
+      "id": "payto",
+      "publisher": "Australian Payments Plus",
+      "title": "PayTo",
+      "date": "accessed 31 October 2026",
+      "kind": "Scheme operator: definition",
+      "url": "https://www.auspayplus.com.au/solutions/payto",
+      "access": "open"
+    },
+    {
+      "id": "payid",
+      "publisher": "Australian Payments Plus",
+      "title": "PayID",
+      "date": "accessed 31 October 2026",
+      "kind": "Scheme operator: definition",
+      "url": "https://www.auspayplus.com.au/solutions/payid",
+      "access": "open"
+    },
+    {
+      "id": "fta-2022",
+      "publisher": "FinTech Australia",
+      "title": "FinTech Australia announces new board appointment, confirms board roles",
+      "date": "1 December 2022",
+      "kind": "Primary: industry body",
+      "url": "https://www.fintechaustralia.org.au/community-news/fintech-australia-announces-new-board-appointment-confirms-board-roles",
+      "access": "open"
+    },
+    {
+      "id": "monoova-fta",
+      "publisher": "Monoova",
+      "title": "Christian Westerlind-Wigstrom re-elected as Director at Fintech Australia",
+      "date": "28 November 2024",
+      "kind": "Primary: company release",
+      "url": "https://www.monoova.com/newsroom/christian-westerlind-wigstrom-re-elected-as-director-at-fintech-australia",
+      "access": "open"
+    },
+    {
+      "id": "fta-2024",
+      "publisher": "FinTech Australia",
+      "title": "FinTech Australia strengthens Board with new board appointments",
+      "date": "10 December 2024",
+      "kind": "Primary: industry body",
+      "url": "https://www.fintechaustralia.org.au/community-news/fintech-australia-strengthens-board-with-new-board-appointments",
+      "access": "open"
+    },
+    {
+      "id": "legislation",
+      "publisher": "Federal Register of Legislation",
+      "title": "Corporations Amendment (Digital Assets Framework) Act 2026, No. 38, 2026",
+      "date": "8 April 2026",
+      "kind": "Primary: legislation",
+      "url": "https://www.legislation.gov.au/C2026A00038/asmade/text",
+      "access": "open"
+    },
+    {
+      "id": "asic",
+      "publisher": "ASIC",
+      "title": "26-245MR ASIC consults on implementation of new digital asset laws",
+      "date": "15 October 2026",
+      "kind": "Regulator: media release",
+      "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-245mr-asic-consults-on-implementation-of-new-digital-asset-laws",
+      "access": "open"
+    },
+    {
+      "id": "rba-acacia",
+      "publisher": "Reserve Bank of Australia",
+      "title": "Media Release 2026-13: RBA and DFCRC Release Findings From Project Acacia",
+      "date": "18 May 2026",
+      "kind": "Central bank: media release",
+      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-13.html",
+      "access": "open"
+    },
+    {
+      "id": "rba-money",
+      "publisher": "Reserve Bank of Australia",
+      "title": "About Tokenised Money",
+      "date": "accessed 31 October 2026",
+      "kind": "Central bank: definition",
+      "url": "https://www.rba.gov.au/payments-and-infrastructure/tokenised-money/",
+      "access": "open"
+    },
+    {
+      "id": "glossary",
+      "publisher": "ethereum.org",
+      "title": "Ethereum glossary: Layer 1, Consensus, Validator",
+      "date": "accessed 31 October 2026",
+      "kind": "Reference: definitions",
+      "url": "https://ethereum.org/glossary/",
+      "access": "open"
+    },
+    {
+      "id": "tok-tech",
+      "publisher": "Tokeniser",
+      "title": "Our Technology (figures published by Redbelly Network)",
+      "date": "accessed 31 October 2026",
+      "kind": "Primary: product website",
+      "url": "https://tokeniser.com/technology",
+      "access": "open"
+    },
+    {
+      "id": "tokeniser",
+      "publisher": "Tokeniser",
+      "title": "Home page, including FAQ and site footer",
+      "date": "accessed 31 October 2026",
+      "kind": "Primary: product website",
+      "url": "https://tokeniser.com/",
+      "access": "open"
+    },
+    {
+      "id": "tok-about",
+      "publisher": "Tokeniser",
+      "title": "About Us",
+      "date": "accessed 31 October 2026",
+      "kind": "Primary: product website",
+      "url": "https://tokeniser.com/about",
+      "access": "open"
+    }
+  ],
+  "reviewed_not_cited": [
+    {
+      "publisher": "LinkedIn",
+      "title": "Christian Westerlind Wigstrom, public professional profile",
+      "url": "https://www.linkedin.com/in/christian-westerlind-wigstrom/",
+      "reason": "Reviewed for orientation. It needs a LinkedIn login, so readers may not be able to check it. Every claim in this briefing therefore rests on a public page instead."
+    }
+  ]
+}
