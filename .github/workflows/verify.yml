@@ -1,0 +1,52 @@
+name: Verify briefing
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 21 * * 0" # weekly live source check (Monday morning, Sydney time)
+
+permissions:
+  contents: read
+
+jobs:
+  offline:
+    name: Offline checks
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          npm install --no-save --no-audit --no-fund docx@9.7.1
+      - name: Generated files match the source data
+        run: |
+          node build/build.js
+          git diff --exit-code -- briefing/*.md x-thread sources/sources.md sources/sources.csv sources/claim-check.md
+      - name: Run checks
+        run: python3 scripts/verify.py
+
+  sources:
+    name: Live source check
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Open every source and confirm each supporting excerpt
+        run: python3 scripts/check_sources.py --report "$RUNNER_TEMP/report.md"
+      - name: Add report to the run summary
+        if: always()
+        run: cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY" || true

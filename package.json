@@ -1,0 +1,14 @@
+{
+  "name": "redbelly-leadership-briefing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sourced community briefing on Redbelly Network's incoming CEO, with an X thread and a verified source list.",
+  "scripts": {
+    "build": "bash build/build.sh",
+    "verify": "python3 scripts/verify.py",
+    "check-sources": "python3 scripts/check_sources.py --report sources/verification-report.md"
+  },
+  "devDependencies": {
+    "docx": "9.7.1"
+  }
+}
