@@ -8,12 +8,12 @@
 
 ![Briefing](https://img.shields.io/badge/briefing-3_pages-A61E2A)
 ![Sources](https://img.shields.io/badge/sources-29_linked-1B5FAA)
-![Claims](https://img.shields.io/badge/claims_mapped-78-1D6440)
-![Excerpts](https://img.shields.io/badge/verbatim_excerpts_verified-129%2F129-1D6440)
+![Claims](https://img.shields.io/badge/claims_mapped-77-1D6440)
+![Excerpts](https://img.shields.io/badge/verbatim_excerpts_verified-128%2F128-1D6440)
 ![Thread](https://img.shields.io/badge/X_thread-8_posts-1F2933)
-![Checks](https://img.shields.io/badge/offline_checks-49%2F49-1D6440)
+![Checks](https://img.shields.io/badge/offline_checks-54%2F54-1D6440)
 
-[**Read the briefing (PDF)**](briefing/redbelly-leadership-briefing.pdf) · [Word](briefing/redbelly-leadership-briefing.docx) · [Web version](briefing/redbelly-leadership-briefing.md) · [X thread](x-thread/x-thread.md) · [Source list](sources/sources.md)
+[**Read the briefing (PDF)**](briefing/redbelly-leadership-briefing.pdf) · [Word](briefing/redbelly-leadership-briefing.docx) · [Web version](briefing/redbelly-leadership-briefing.md) · [X thread](x-thread/x-thread.md) · [Source list](sources/source-list.pdf)
 
 <br>
 
@@ -29,17 +29,17 @@
 
 | # | Deliverable | Files | What it contains |
 |:-:|---|---|---|
-| 1 | **The briefing** (3 pages, plus annexes) | [PDF](briefing/redbelly-leadership-briefing.pdf) · [DOCX](briefing/redbelly-leadership-briefing.docx) · [Markdown](briefing/redbelly-leadership-briefing.md) | Six short sections: the appointment, his professional background, what Redbelly said, Redbelly and Tokeniser in brief, analysis, and open questions. Annex A is the source list; Annex B is the X thread. |
-| 2 | **X thread** (8 posts) | [x-thread.md](x-thread/x-thread.md) · [x-thread.txt](x-thread/x-thread.txt) | Ready-to-post copy blocks. Each post is within 280 characters by X’s counting rules and links to its own source. |
-| 3 | **Source list** (29 sources) | [sources.md](sources/sources.md) · [sources.csv](sources/sources.csv) · [claim-check.md](sources/claim-check.md) · [verification-report.md](sources/verification-report.md) | Every source with its link and date, a claim-by-claim table with a verbatim excerpt from each source, and the latest live check of every link and excerpt. |
+| 1 | **The briefing** (3 pages) | [PDF](briefing/redbelly-leadership-briefing.pdf) · [DOCX](briefing/redbelly-leadership-briefing.docx) · [Markdown](briefing/redbelly-leadership-briefing.md) | Six short sections: the appointment, his professional background, what Redbelly said, Redbelly and Tokeniser in brief, analysis, and open questions. Every citation is a clickable link to its source. |
+| 2 | **X thread** (8 posts) | [PDF](x-thread/x-thread.pdf) · [x-thread.md](x-thread/x-thread.md) · [x-thread.txt](x-thread/x-thread.txt) | Ready-to-post copy blocks. Each post is within 280 characters by X’s counting rules and links to its own source. |
+| 3 | **Source list** (29 sources) | [PDF](sources/source-list.pdf) · [sources.md](sources/sources.md) · [sources.csv](sources/sources.csv) · [claim-check.md](sources/claim-check.md) · [verification-report.md](sources/verification-report.md) | Every source with its link and date, a claim-by-claim table with a verbatim excerpt from each source, and the latest live check of every link and excerpt. |
 
-The PDF and DOCX are the same document. Every bracketed citation in them is a clickable link straight to the source.
+The briefing PDF and DOCX are the same 3-page document. Every bracketed citation in them is a clickable link straight to the source, and the numbers match the source list.
 
 ## How the brief’s standards are met
 
 | Standard in the brief | How this submission meets it | Checked by |
 |---|---|---|
-| Every factual claim has a working source link | 78 claims are mapped to 29 sources and 129 verbatim excerpts. Every paragraph, bullet and table row in Sections 1 to 5 carries a clickable citation. | `verify.py` (citations, links), `check_sources.py` (live links and excerpts) |
+| Every factual claim has a working source link | 77 claims are mapped to 29 sources and 128 verbatim excerpts. Every paragraph, bullet and table row in Sections 1 to 5 carries a clickable citation. | `verify.py` (citations, links), `check_sources.py` (live links and excerpts) |
 | Facts and analysis clearly separated | Sections 1 to 4 are tagged **SOURCED FACT**. Section 5 sits in an amber panel tagged **ANALYSIS, NOT FACT**, with a written disclaimer and a balancing list headed *Where the fit is less direct*. Section 6 is tagged **OPEN QUESTIONS**. The analytical thread post starts with “Analysis, not fact”. | `verify.py` (separation) |
 | Readable without background knowledge | Each technical term is explained in plain words at first use, with its own source: API, AFS licence, AUSTRAC, NPP, PayTo, PayID, Layer 1, consensus, validator and wholesale. | Manual review |
 | Neutral, professional tone | Claims are attributed (“Redbelly says…”, “Monoova reported…”). Company figures are labelled as self-reported and not audited. Analysis uses conditional language and sets out the counter-arguments. | Manual review |
@@ -75,7 +75,7 @@ python3 scripts/verify.py
 python3 scripts/check_sources.py
 ```
 
-`verify.py` runs 49 offline checks covering sources, citations, links, quotes, the thread, fact and analysis separation, credit, scope and length. `check_sources.py` opens all 29 links and confirms all 129 excerpts. Add `--report sources/verification-report.md` to save the result. A GitHub Actions workflow runs the offline checks on every push and the live check weekly.
+`verify.py` runs 54 offline checks covering sources, citations, links, quotes, the thread, fact and analysis separation, credit, scope, completeness and length. `check_sources.py` opens all 29 links and confirms all 128 excerpts. Add `--report sources/verification-report.md` to save the result. A GitHub Actions workflow runs the offline checks on every push and the live check weekly.
 
 ## Rebuild
 
@@ -94,10 +94,10 @@ npm run build
 ## Repository layout
 
 ```text
-briefing/   redbelly-leadership-briefing.pdf | .docx | .md   ← deliverable 1
-x-thread/   x-thread.md | x-thread.txt                       ← deliverable 2
-sources/    sources.md | sources.csv | claim-check.md | verification-report.md   ← deliverable 3
-data/       sources.json (29 sources) | claims.json (78 claims, verbatim excerpts)
+briefing/   redbelly-leadership-briefing.pdf | .docx | .md            ← deliverable 1 (3 pages)
+x-thread/   x-thread.pdf | x-thread.md | x-thread.txt                 ← deliverable 2
+sources/    source-list.pdf | sources.md | sources.csv | claim-check.md | verification-report.md   ← deliverable 3
+data/       sources.json (29 sources) | claims.json (77 claims, verbatim excerpts)
 build/      content.js (briefing and thread text) | build.js | build.sh
 scripts/    verify.py (offline checks) | check_sources.py (live link and excerpt check)
 assets/     page previews used in this README

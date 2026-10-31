@@ -4,7 +4,7 @@
 
 *His professional record, what Redbelly said about the appointment, and what it could mean for Tokeniser*
 
-> **How to read this briefing.** Sections 1 to 4 are sourced fact. Section 5 is analysis and is marked as such. Section 6 lists open questions. Bracketed numbers link to the sources in Annex A; every link was checked on 31 October 2026. Dollar figures are as reported by the companies named.
+> **How to read this briefing.** Sections 1 to 4 are sourced fact. Section 5 is analysis and is marked as such. Section 6 lists open questions. Each bracketed number is a clickable link to its source; the numbered source list and the X thread are separate files. Every link was checked on 31 October 2026. Dollar figures are as reported by the companies named.
 
 ### At a glance
 
@@ -28,7 +28,7 @@ On 16 September 2026, Redbelly Network announced Christian Westerlind Wigstrom a
 
 ### Before payments
 
-He holds a master’s degree in economics and a PhD in international relations from the University of Oxford [[9]](https://tieronepeople.com/2023/05/26/christian-westerlind-wigstrom-co-founder-and-ceo-of-monoova/). As a doctoral student he worked with Robert Skidelsky on economic policy and theory [[10]](https://www.ineteconomics.org/research/experts/cwwigstrom), and he was an economic adviser and speechwriter in the House of Lords [[9]](https://tieronepeople.com/2023/05/26/christian-westerlind-wigstrom-co-founder-and-ceo-of-monoova/)[[11]](https://www.thebusinessconversation.com.au/contributor/christian-westerlind-wigstrom). In 2010 the two co-edited *The Economic Crisis and the State of Economics* (Palgrave Macmillan) [[12]](https://econpapers.repec.org/bookchap/palpalbok/978-0-230-10569-0.htm). From September 2010 he was also executive secretary of the UK branch of an economics-curriculum task force run by the Institute for New Economic Thinking [[10]](https://www.ineteconomics.org/research/experts/cwwigstrom). He then spent three years as Chief of Staff at a Harare-based agricultural group in Zimbabwe [[9]](https://tieronepeople.com/2023/05/26/christian-westerlind-wigstrom-co-founder-and-ceo-of-monoova/)[[11]](https://www.thebusinessconversation.com.au/contributor/christian-westerlind-wigstrom), and arrived in Australia in late 2016 [[11]](https://www.thebusinessconversation.com.au/contributor/christian-westerlind-wigstrom).
+He holds a master’s degree in economics and a PhD in international relations from the University of Oxford [[9]](https://tieronepeople.com/2023/05/26/christian-westerlind-wigstrom-co-founder-and-ceo-of-monoova/). As a doctoral student he worked with Robert Skidelsky on economic policy and theory [[10]](https://www.ineteconomics.org/research/experts/cwwigstrom), and he was an economic adviser and speechwriter in the House of Lords [[9]](https://tieronepeople.com/2023/05/26/christian-westerlind-wigstrom-co-founder-and-ceo-of-monoova/)[[11]](https://www.thebusinessconversation.com.au/contributor/christian-westerlind-wigstrom). In 2010 the two co-edited *The Economic Crisis and the State of Economics* (Palgrave Macmillan) [[12]](https://econpapers.repec.org/bookchap/palpalbok/978-0-230-10569-0.htm). From September 2010 he was also executive secretary of the UK branch of an economics-curriculum task force run by the Institute for New Economic Thinking [[10]](https://www.ineteconomics.org/research/experts/cwwigstrom). He then spent three years as Chief of Staff at a Harare-based agricultural group in Zimbabwe [[9]](https://tieronepeople.com/2023/05/26/christian-westerlind-wigstrom-co-founder-and-ceo-of-monoova/)[[11]](https://www.thebusinessconversation.com.au/contributor/christian-westerlind-wigstrom).
 
 ### Monoova, 2017 to 2026
 
@@ -121,7 +121,7 @@ These are questions, not claims. The announcement does not address [[1]](https:/
 
 ---
 
-## Annex A: Source list
+## Source list
 
 Every link was opened and checked on 31 October 2026. Numbers match the citations above. For a verbatim excerpt supporting each claim, see [the claim-by-claim check](../sources/claim-check.md).
 
@@ -155,7 +155,7 @@ Every link was opened and checked on 31 October 2026. Numbers match the citation
 28. **Tokeniser.** “Home page, including FAQ and site footer”. Accessed 31 October 2026. <https://tokeniser.com/>
 29. **Tokeniser.** “About Us”. Accessed 31 October 2026. <https://tokeniser.com/about>
 
-## Annex B: X thread
+## X thread
 
 The ready-to-post thread is in [x-thread/x-thread.md](../x-thread/x-thread.md).
 

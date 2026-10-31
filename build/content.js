@@ -10,7 +10,7 @@ const briefing = [
   { type: 'subtitle', text: 'His professional record, what Redbelly said about the appointment, and what it could mean for Tokeniser' },
   {
     type: 'guide',
-    text: '**How to read this briefing.** Sections 1 to 4 are sourced fact. Section 5 is analysis and is marked as such. Section 6 lists open questions. Bracketed numbers link to the sources in Annex A; every link was checked on 31 October 2026. Dollar figures are as reported by the companies named.',
+    text: '**How to read this briefing.** Sections 1 to 4 are sourced fact. Section 5 is analysis and is marked as such. Section 6 lists open questions. Each bracketed number is a clickable link to its source; the numbered source list and the X thread are separate files. Every link was checked on 31 October 2026. Dollar figures are as reported by the companies named.',
   },
   {
     type: 'glance',
@@ -34,7 +34,7 @@ const briefing = [
   { type: 'h2', text: 'Before payments' },
   {
     type: 'p',
-    text: 'He holds a master’s degree in economics and a PhD in international relations from the University of Oxford [@tierone]. As a doctoral student he worked with Robert Skidelsky on economic policy and theory [@inet], and he was an economic adviser and speechwriter in the House of Lords [@tierone,bizconv]. In 2010 the two co-edited _The Economic Crisis and the State of Economics_ (Palgrave Macmillan) [@econpapers]. From September 2010 he was also executive secretary of the UK branch of an economics-curriculum task force run by the Institute for New Economic Thinking [@inet]. He then spent three years as Chief of Staff at a Harare-based agricultural group in Zimbabwe [@tierone,bizconv], and arrived in Australia in late 2016 [@bizconv].',
+    text: 'He holds a master’s degree in economics and a PhD in international relations from the University of Oxford [@tierone]. As a doctoral student he worked with Robert Skidelsky on economic policy and theory [@inet], and he was an economic adviser and speechwriter in the House of Lords [@tierone,bizconv]. In 2010 the two co-edited _The Economic Crisis and the State of Economics_ (Palgrave Macmillan) [@econpapers]. From September 2010 he was also executive secretary of the UK branch of an economics-curriculum task force run by the Institute for New Economic Thinking [@inet]. He then spent three years as Chief of Staff at a Harare-based agricultural group in Zimbabwe [@tierone,bizconv].',
   },
   { type: 'h2', text: 'Monoova, 2017 to 2026' },
   {

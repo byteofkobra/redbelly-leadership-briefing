@@ -6,5 +6,8 @@ cd "$(dirname "$0")/.."
 
 node build/build.js
 soffice --headless --convert-to pdf --outdir briefing briefing/redbelly-leadership-briefing.docx >/dev/null
+soffice --headless --convert-to pdf --outdir build/.out build/.out/source-list.docx build/.out/x-thread.docx >/dev/null
+mv build/.out/source-list.pdf sources/source-list.pdf
+mv build/.out/x-thread.pdf x-thread/x-thread.pdf
 pdftoppm -r 90 -png -f 1 -l 3 briefing/redbelly-leadership-briefing.pdf assets/page
 python3 scripts/verify.py

@@ -13,14 +13,12 @@ Each check maps to a requirement or failure criterion in the brief:
   separation   analysis is labelled in the briefing and in the thread
   credit       no names, handles, signatures or "made by" lines, and no author metadata
   scope        no price talk or investment language, and nothing about private life
-  length       the briefing body (before Annex A) is at most 3 pages, if pdftotext is installed
+  length       the briefing PDF is 2 to 3 pages; the source list and thread PDFs exist
 """
 
 import csv
 import json
 import re
-import shutil
-import subprocess
 import sys
 import zipfile
 from pathlib import Path
@@ -32,6 +30,8 @@ ROOT = Path(__file__).resolve().parent.parent
 BRIEF_MD = ROOT / "briefing/redbelly-leadership-briefing.md"
 BRIEF_DOCX = ROOT / "briefing/redbelly-leadership-briefing.docx"
 BRIEF_PDF = ROOT / "briefing/redbelly-leadership-briefing.pdf"
+SOURCES_PDF = ROOT / "sources/source-list.pdf"
+THREAD_PDF = ROOT / "x-thread/x-thread.pdf"
 THREAD_TXT = ROOT / "x-thread/x-thread.txt"
 
 results = []
@@ -68,7 +68,7 @@ def main():
     check("sources: every URL uses https", all(u.startswith("https://") for u in urls))
 
     md = BRIEF_MD.read_text()
-    body = md.split("## Annex A")[0]
+    body = md.split("## Source list")[0]
     cited = {int(n): u for n, u in re.findall(r"\[\[(\d+)\]\]\((https?://[^)]+)\)", body)}
     check("sources: every source is cited in the briefing", set(cited) == set(by_num),
           f"uncited: {sorted(set(by_num) - set(cited))}")
@@ -144,11 +144,11 @@ def main():
     creator = re.search(r"<dc:creator>(.*?)</dc:creator>", core)
     modified = re.search(r"<cp:lastModifiedBy>(.*?)</cp:lastModifiedBy>", core)
     check("credit: DOCX has no author metadata", not (creator and creator.group(1).strip()) and not (modified and modified.group(1).strip()))
-    if BRIEF_PDF.exists():
-        pdf = BRIEF_PDF.read_bytes()
-        author = re.search(rb"/Author\s*(\((?:[^)\\]|\\.)*\)|<[0-9A-Fa-f]*>)", pdf)
-        empty = (None, b"()", b"<>", b"<FEFF>", b"<feff>")
-        check("credit: PDF has no author metadata", author is None or author.group(1) in empty)
+    empty = (None, b"()", b"<>", b"<FEFF>", b"<feff>")
+    for pdf_path in (BRIEF_PDF, SOURCES_PDF, THREAD_PDF):
+        if pdf_path.exists():
+            author = re.search(rb"/Author\s*(\((?:[^)\\]|\\.)*\)|<[0-9A-Fa-f]*>)", pdf_path.read_bytes())
+            check(f"credit: {pdf_path.name} has no author metadata", author is None or author.group(1) in empty)
 
     # scope: no price talk, investment language or private life
     text = md + thread_txt
@@ -157,17 +157,16 @@ def main():
     private = re.findall(r"(?i)\b(wife|husband|married|marriage|children|kids|daughter|son|family|born|birthday|hobby|hobbies|religion|religious|lives in|home town|military service)\b", text)
     check("scope: nothing about private life or family", not private, ", ".join(sorted(set(private))))
 
-    # length
-    if BRIEF_PDF.exists() and shutil.which("pdftotext"):
-        pages = subprocess.run(["pdftotext", "-layout", str(BRIEF_PDF), "-"], capture_output=True, text=True).stdout.split("\f")
-        annex = next((i + 1 for i, p in enumerate(pages) if "Annex A: Source list" in p), None)
-        check("length: briefing body is at most 3 pages", annex is not None and annex - 1 <= 3, f"Annex A starts on page {annex}")
-    else:
-        check("length: skipped (pdftotext not installed)", True)
+    # length and completeness
+    for pdf_path, label in ((BRIEF_PDF, "briefing PDF"), (SOURCES_PDF, "source list PDF"), (THREAD_PDF, "X thread PDF")):
+        check(f"deliverables: {label} exists", pdf_path.exists())
+    if BRIEF_PDF.exists():
+        pages = len(re.findall(rb"/Type\s*/Page(?![s\w])", BRIEF_PDF.read_bytes()))
+        check("length: briefing PDF is 2 to 3 pages", 2 <= pages <= 3, f"{pages} pages")
 
     width = max(len(n) for n, _, _ in results)
     for name, ok, detail in results:
-        print(f"{'PASS' if ok else 'FAIL'}  {name:<{width}}  {detail if (detail and not ok) or 'checked' in detail or 'sources' in detail or 'posts' in detail or 'page' in detail else ''}".rstrip())
+        print(f"{'PASS' if ok else 'FAIL'}  {name:<{width}}  {detail if (detail and not ok) or 'checked' in detail or 'sources' in detail or 'posts' in detail or 'pages' in detail else ''}".rstrip())
     failed = [n for n, ok, _ in results if not ok]
     print(f"\n{len(results) - len(failed)}/{len(results)} checks passed.")
     return 1 if failed else 0

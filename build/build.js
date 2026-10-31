@@ -264,9 +264,53 @@ for (const b of briefing) {
   }
 }
 
-// Annex A: sources
-body.push(h1('A', 'Annex A: Source list', 'sources', { pageBreak: true }));
-body.push(para(`Every link below was opened and checked on ${AS_OF}. Numbers match the citations in the briefing and the X thread. Company figures are as reported by the companies themselves. A claim-by-claim table with a verbatim excerpt from each source is in sources/claim-check.md.`, { size: SZ.small, color: C.muted, after: 120 }));
+// ---------- header / footer and document shell ----------
+const small = (text, o = {}) => new D.TextRun({ text, font: FONT, size: 14, color: C.muted, ...o });
+function makeDoc(children, { headerLeft, title, subject }) {
+  const header = new D.Header({ children: [new D.Paragraph({
+    border: { bottom: line(C.rule, 4) }, spacing: { after: 0 }, tabStops: [{ type: D.TabStopType.RIGHT, position: CW }],
+    children: [small(headerLeft, { bold: true, color: C.ink }), new D.TextRun({ children: [new D.Tab()] }), small(`Information current to ${AS_OF}`)],
+  })] });
+  const footer = () => new D.Footer({ children: [new D.Paragraph({
+    border: { top: line(C.rule, 4) }, spacing: { before: 0 }, tabStops: [{ type: D.TabStopType.RIGHT, position: CW }],
+    children: [
+      small('Independent community briefing. Not an official Redbelly Network or Tokeniser publication. Not financial advice.'),
+      new D.TextRun({ children: [new D.Tab()] }),
+      new D.TextRun({ font: FONT, size: 14, color: C.muted, children: ['Page ', D.PageNumber.CURRENT, ' of ', D.PageNumber.TOTAL_PAGES] }),
+    ],
+  })] });
+  return new D.Document({
+    creator: '', lastModifiedBy: '', title, subject,
+    keywords: 'Redbelly Network; Tokeniser; CEO; tokenisation; briefing',
+    description: `Sourced community briefing. Information current to ${AS_OF}.`,
+    styles: {
+      default: { document: { run: { font: FONT, size: SZ.body, color: C.ink } } },
+      paragraphStyles: [
+        { id: 'Heading1', name: 'Heading 1', basedOn: 'Normal', next: 'Normal', quickFormat: true, run: { font: FONT, size: 26, bold: true, color: C.ink }, paragraph: { spacing: { before: 230, after: 110 }, outlineLevel: 0 } },
+        { id: 'Heading2', name: 'Heading 2', basedOn: 'Normal', next: 'Normal', quickFormat: true, run: { font: FONT, size: 21, bold: true, color: C.accent }, paragraph: { spacing: { before: 140, after: 60 }, outlineLevel: 1 } },
+      ],
+    },
+    numbering: { config: [{ reference: 'dot', levels: [{ level: 0, format: D.LevelFormat.BULLET, text: '•', alignment: D.AlignmentType.LEFT, style: { paragraph: { indent: { left: 300, hanging: 200 } }, run: { color: C.accent, bold: true } } }] }] },
+    sections: [{
+      properties: { page: { size: { width: PAGE.w, height: PAGE.h }, margin: { top: PAGE.my, bottom: PAGE.my, left: PAGE.mx, right: PAGE.mx, header: 480, footer: 480 } }, titlePage: true },
+      headers: { default: header, first: new D.Header({ children: [new D.Paragraph({ children: [] })] }) },
+      footers: { default: footer(), first: footer() },
+      children,
+    }],
+  });
+}
+function docTitle(kicker, title, intro) {
+  return [
+    new D.Paragraph({ spacing: { after: 80 }, children: [new D.TextRun({ text: kicker, font: FONT, size: 15, bold: true, color: C.accent, characterSpacing: 24 })] }),
+    new D.Paragraph({ heading: D.HeadingLevel.HEADING_1, spacing: { before: 0, after: 100, line: 250, lineRule: D.LineRuleType.AUTO }, border: { bottom: line(C.accent, 12) }, children: [new D.TextRun({ text: title, font: FONT, size: 34, bold: true, color: C.ink })] }),
+    para(intro, { size: SZ.small, color: C.muted, before: 60, after: 120 }),
+  ];
+}
+const KICK = `COMMUNITY BRIEFING  ·  REDBELLY’S INCOMING CEO  ·  ${AS_OF.toUpperCase()}`;
+
+// ---------- Deliverable 3: source list (own document) ----------
+const srcBody = docTitle(KICK, 'Source list',
+  `${numbered.length} sources, numbered as cited in the briefing and the X thread. Every link was opened and checked on ${AS_OF}. Company figures are as reported by the companies themselves. A claim-by-claim table with a verbatim excerpt from each source is in sources/claim-check.md.`);
 for (const s of numbered) {
   const children = [
     new D.TextRun({ text: `[${s.n}]`, font: FONT, size: SZ.small, bold: true, color: C.accent }),
@@ -278,14 +322,14 @@ for (const s of numbered) {
   if (s.note) children.push(new D.TextRun({ text: ` ${s.note}`, font: FONT, size: SZ.small, italics: true, color: C.muted }));
   children.push(new D.TextRun({ break: 1, text: '' }));
   children.push(new D.ExternalHyperlink({ link: s.url, children: [new D.TextRun({ text: s.url, font: FONT, size: SZ.tiny, color: C.link, underline: { type: D.UnderlineType.SINGLE, color: C.link } })] }));
-  body.push(new D.Paragraph({
+  srcBody.push(new D.Paragraph({
     spacing: { after: 34, line: 236, lineRule: D.LineRuleType.AUTO }, keepLines: true,
     indent: { left: 460, hanging: 460 }, tabStops: [{ type: D.TabStopType.LEFT, position: 460 }], children,
   }));
 }
-body.push(new D.Paragraph({ spacing: { before: 80, after: 40 }, keepNext: true, children: [new D.TextRun({ text: 'Reviewed but not cited', font: FONT, size: SZ.body, bold: true, color: C.ink })] }));
+srcBody.push(new D.Paragraph({ spacing: { before: 80, after: 40 }, keepNext: true, children: [new D.TextRun({ text: 'Reviewed but not cited', font: FONT, size: SZ.body, bold: true, color: C.ink })] }));
 for (const r of reviewed) {
-  body.push(new D.Paragraph({
+  srcBody.push(new D.Paragraph({
     spacing: { after: 60, line: 245, lineRule: D.LineRuleType.AUTO }, children: [
       new D.TextRun({ text: `${r.publisher}. `, font: FONT, size: SZ.small, bold: true, color: C.ink }),
       new D.TextRun({ text: `${r.title}. ${r.reason} `, font: FONT, size: SZ.small, color: C.muted }),
@@ -294,9 +338,9 @@ for (const r of reviewed) {
   }));
 }
 
-// Annex B: X thread
-body.push(h1('B', 'Annex B: X thread', 'thread', { pageBreak: true }));
-body.push(para(`${posts.length} posts, ready to copy. X counts every link as 23 characters; each count below includes the links, and every post is within the 280-character limit and links to its sources. Post 8 is analysis and says so.`, { size: SZ.small, color: C.muted, after: 140 }));
+// ---------- Deliverable 2: X thread (own document) ----------
+const threadBody = docTitle(KICK, 'X thread',
+  `${posts.length} posts, ready to copy. X counts every link as 23 characters; each count below includes the links, every post is within the 280-character limit, and every post links to its sources. Post ${posts.length} is analysis and says so.`);
 for (const p of posts) {
   const inner = [
     new D.Paragraph({ spacing: { after: 50 }, children: [
@@ -306,49 +350,27 @@ for (const p of posts) {
     new D.Paragraph({ spacing: { after: 50, line: 264, lineRule: D.LineRuleType.AUTO }, children: [new D.TextRun({ text: p.text, font: FONT, size: SZ.body, color: C.ink })] }),
     ...p.urls.map((u) => new D.Paragraph({ spacing: { after: 0 }, children: [new D.ExternalHyperlink({ link: u, children: [new D.TextRun({ text: u, font: FONT, size: SZ.tiny, color: C.link })] })] })),
   ];
-  body.push(new D.Table({
+  threadBody.push(new D.Table({
     width: { size: CW, type: D.WidthType.DXA }, columnWidths: [CW],
     borders: { top: line(), bottom: line(), left: { style: D.BorderStyle.SINGLE, size: 18, color: C.accent }, right: line(), insideHorizontal: NONE, insideVertical: NONE },
     rows: [new D.TableRow({ cantSplit: true, children: [cell(inner, { w: CW, ml: 180, mr: 160, mt: 90, mb: 90 })] })],
   }), spacer(100));
 }
 
-// ---------- header / footer ----------
-const small = (text, o = {}) => new D.TextRun({ text, font: FONT, size: 14, color: C.muted, ...o });
-const header = new D.Header({ children: [new D.Paragraph({
-  border: { bottom: line(C.rule, 4) }, spacing: { after: 0 }, tabStops: [{ type: D.TabStopType.RIGHT, position: CW }],
-  children: [small('Redbelly’s incoming CEO  ·  Community briefing', { bold: true, color: C.ink }), new D.TextRun({ children: [new D.Tab()] }), small(`Information current to ${AS_OF}`)],
-})] });
-const footer = new D.Footer({ children: [new D.Paragraph({
-  border: { top: line(C.rule, 4) }, spacing: { before: 0 }, tabStops: [{ type: D.TabStopType.RIGHT, position: CW }],
-  children: [
-    small('Independent community briefing. Not an official Redbelly Network or Tokeniser publication. Not financial advice.'),
-    new D.TextRun({ children: [new D.Tab()] }),
-    new D.TextRun({ font: FONT, size: 14, color: C.muted, children: ['Page ', D.PageNumber.CURRENT, ' of ', D.PageNumber.TOTAL_PAGES] }),
-  ],
-})] });
-
-const doc = new D.Document({
-  creator: '', lastModifiedBy: '',
+const doc = makeDoc(body, {
+  headerLeft: 'Redbelly’s incoming CEO  ·  Community briefing',
   title: 'Redbelly’s incoming CEO: Christian Westerlind Wigstrom',
   subject: 'Community briefing on Redbelly Network’s incoming CEO and what his record could mean for Tokeniser',
-  keywords: 'Redbelly Network; Tokeniser; CEO; tokenisation; briefing',
-  description: `Sourced community briefing. Information current to ${AS_OF}.`,
-  styles: {
-    default: { document: { run: { font: FONT, size: SZ.body, color: C.ink } } },
-    paragraphStyles: [
-      { id: 'Title', name: 'Title', basedOn: 'Normal', next: 'Normal', run: { font: FONT, size: 46, bold: true, color: C.ink }, paragraph: { spacing: { after: 70 } } },
-      { id: 'Heading1', name: 'Heading 1', basedOn: 'Normal', next: 'Normal', quickFormat: true, run: { font: FONT, size: 26, bold: true, color: C.ink }, paragraph: { spacing: { before: 230, after: 110 }, outlineLevel: 0 } },
-      { id: 'Heading2', name: 'Heading 2', basedOn: 'Normal', next: 'Normal', quickFormat: true, run: { font: FONT, size: 21, bold: true, color: C.accent }, paragraph: { spacing: { before: 140, after: 60 }, outlineLevel: 1 } },
-    ],
-  },
-  numbering: { config: [{ reference: 'dot', levels: [{ level: 0, format: D.LevelFormat.BULLET, text: '•', alignment: D.AlignmentType.LEFT, style: { paragraph: { indent: { left: 300, hanging: 200 } }, run: { color: C.accent, bold: true } } }] }] },
-  sections: [{
-    properties: { page: { size: { width: PAGE.w, height: PAGE.h }, margin: { top: PAGE.my, bottom: PAGE.my, left: PAGE.mx, right: PAGE.mx, header: 480, footer: 480 } }, titlePage: true },
-    headers: { default: header, first: new D.Header({ children: [new D.Paragraph({ children: [] })] }) },
-    footers: { default: footer, first: footer },
-    children: body,
-  }],
+});
+const srcDoc = makeDoc(srcBody, {
+  headerLeft: 'Redbelly’s incoming CEO  ·  Source list',
+  title: 'Source list: Redbelly’s incoming CEO briefing',
+  subject: 'Numbered sources for the community briefing on Redbelly Network’s incoming CEO',
+});
+const threadDoc = makeDoc(threadBody, {
+  headerLeft: 'Redbelly’s incoming CEO  ·  X thread',
+  title: 'X thread: Redbelly’s incoming CEO',
+  subject: 'X thread version of the community briefing on Redbelly Network’s incoming CEO',
 });
 
 // ---------- Markdown outputs ----------
@@ -390,9 +412,9 @@ for (const b of briefing) {
     default: throw new Error(b.type);
   }
 }
-M.push('---', '', '## Annex A: Source list', '', `Every link was opened and checked on ${AS_OF}. Numbers match the citations above. For a verbatim excerpt supporting each claim, see [the claim-by-claim check](../sources/claim-check.md).`, '');
+M.push('---', '', '## Source list', '', `Every link was opened and checked on ${AS_OF}. Numbers match the citations above. For a verbatim excerpt supporting each claim, see [the claim-by-claim check](../sources/claim-check.md).`, '');
 for (const s of numbered) M.push(`${s.n}. **${s.publisher}.** “${s.title}”. ${s.date[0].toUpperCase()}${s.date.slice(1)}. <${s.url}>${s.note ? ` *${s.note}*` : ''}`);
-M.push('', '## Annex B: X thread', '', 'The ready-to-post thread is in [x-thread/x-thread.md](../x-thread/x-thread.md).', '', '---', '', '<sub>Independent community briefing. Not an official Redbelly Network or Tokeniser publication. Not financial advice.</sub>', '');
+M.push('', '## X thread', '', 'The ready-to-post thread is in [x-thread/x-thread.md](../x-thread/x-thread.md).', '', '---', '', '<sub>Independent community briefing. Not an official Redbelly Network or Tokeniser publication. Not financial advice.</sub>', '');
 
 // X thread
 const T = [
@@ -451,6 +473,9 @@ K.push('', 'Every statement in the thread repeats a claim from the briefing and 
 (async () => {
   const buf = await D.Packer.toBuffer(doc);
   write('briefing/redbelly-leadership-briefing.docx', buf);
+  fs.mkdirSync(path.join(ROOT, 'build/.out'), { recursive: true });
+  write('build/.out/source-list.docx', await D.Packer.toBuffer(srcDoc));
+  write('build/.out/x-thread.docx', await D.Packer.toBuffer(threadDoc));
   write('briefing/redbelly-leadership-briefing.md', M.join('\n'));
   write('x-thread/x-thread.md', T.join('\n'));
   write('x-thread/x-thread.txt', TXT);
